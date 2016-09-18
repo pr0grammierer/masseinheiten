@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maßeinheiten</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <style>
+            html,body {
+                background: #161618;
+                color: #F5F7F6;
+                background: #161618 url('dickbutt.svg') no-repeat fixed center center;
+                background-size: 100% auto;
+            }
+            header {
+                margin: 5rem 0;
+            }
+            h2 {
+                color: #ee4d2e;
+                margin-bottom: 0;
+            }
+            h3 {
+                color: #F5F7F6;
+                margin: 0 0 2rem;
+            }
+            small {
+                color: #aaa;
+            }
+            .container {
+            }
+            select.form-control {
+                background-color: transparent;
+                color: #bbb;
+                border-color: #F5F7F6;
+                outline: none; 
+           }
+            .form-control:disabled,
+            input.form-control {
+                background-color: transparent;
+                color: #F5F7F6;
+                border-color: #F5F7F6;
+                outline: none;
+            }
+            .form-control:focus {
+                border-color: #ee4d2e;
+                outline: 0;
+                -webkit-box-shadow: none;
+                box-shadow: none;
+            }
+            hr {
+                border-color: #aaa;
+                margin: 1rem 0 3.6rem 0;
+            }
+            @media (min-width: 768px) {
+                html,body {
+                    background-size: auto 100%;
+                }
+            }
+            </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <header>
+                <h1>Maßeinheiten</h1>
+                <p class="lead"></p>
+            </header>
+            <form id="form">
+                <hr />
+                <h2>Afrikanische Elefanten</h2>
+                <h3>Gewicht</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control input" data-id="weight" value="5000" id="weight" placeholder="Gewicht">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control select" data-id="weight" id="weight-conversion">
+                                <option value="1" selected="selected">kg</option>
+                                <option value="0.001">t</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="weight-result" disabled="disabled" placeholder="0 Elefanten">
+                            <small class="weight">Elefant</small>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <!--area-->
+                <h2>Fußballfelder</h2>
+                <h3>Fläche</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control input" data-id="area" value="7140" id="area" placeholder="Fläche">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control select" data-id="area" id="area-conversion">
+                                <option value="1" selected="selected">m&sup2;</option>
+                                <option value="0.0001">ha</option>
+                                <option value="0.000001">km&sup2;</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="area-result"  disabled="disabled" placeholder="1">
+                            <small class="area">Fußballfeld</small>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <!--length-->
+                <h2>Strecke zum Mond</h2>
+                <h3>Entfernung</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control input" data-id="moon" value="384400" id="moon" placeholder="Entfernung">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control select" data-id="moon" id="moon-conversion">
+                                <option value="1" selected="selected">km</option>
+                                <option value="1.0569707219110031e-13">Lichtjahre</option>
+                                <option value="0.62138889452515366774">Meilen :-(</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="moon-result"  disabled="disabled" placeholder="1">
+                            <small class="moon">x mal die Strecke zum Mond</small>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <!--volume-->
+                <h2>Badewannen</h2>
+                <h3>Volumen</h3>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <input type="text" class="form-control input" data-id="volume" value="140" id="volume" placeholder="Volumen">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select class="form-control select" data-id="volume" id="volume-conversion">
+                                <option value="1" selected="selected">l</option>
+                                <option value="0.001">m&sup3;</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="volume-result"  disabled="disabled" placeholder="1">
+                            <small class="volume">Badewanne</small>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                
+            </form>
+        </div>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+        <script>
+            $(function(){
+                var data = {
+                    weight: {name:'afrikanische Elefanten',namesingular:'afrikanischer Elefant',measurement: '5000'/*kg*/},
+                    area: {name:'Fußballfelder',namesingular:'Fußballfeld',measurement: '7140'}, /*m^2*/ 
+                    moon: {name:'x mal die Strecke zum Mond',namesingular:'x mal die Strecke zum Mond',measurement: '384400'}, /*km*/
+                    volume: {name:'Badewannen',namesingular:'Badewanne',measurement: '140'} /*l*/
+                };
+                /*init*/
+                update(); 
+                /*keyup in input*/
+                $('input.input').keyup(function(){
+                    update();
+                });
+                /*change select*/
+                $('select').change(function(){
+                    update();
+                });
+                /*update*/
+                function update(){
+                    $('.input').each(function(){
+                        var value = ($(this).val() / data[$(this).data('id')].measurement) / $('#'+$(this).data('id')+'-conversion').val();
+                        $('#'+$(this).data('id')+'-result').val((value.toFixed(20)==1.00000000000000000000 ? value.toFixed(0) : value));
+                        $('small.'+$(this).data('id')).html(value.toFixed(20)==1.00000000000000000000 ? data[$(this).data('id')].namesingular : data[$(this).data('id')].name);
+                    });
+                }
+            });
+            
+        </script>
+    </body>
+</html>
